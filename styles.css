@@ -15,6 +15,13 @@ html {
     width: 50px;
     display: inline-block;
 
+
+}
+
+.logo > img{
+
+    width: 50px;
+    height: 50px;
 }
 
 header>nav {
@@ -24,7 +31,10 @@ header>nav {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(226, 226, 266);
+    border-radius: 0 0 5px 5px;
 }
+
+
 
 .menu_list {
     display: flex;
@@ -46,7 +56,22 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: rgb(18, 21, 61);
+    
 
+}
+main{
+    margin: 4rem 2rem;
+}
+
+
+p, h1{
+    color: rgb(226, 226, 266);
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
 }
 
 a {
@@ -61,4 +86,10 @@ footer{
     text-align: center;
     margin-top: auto;
     font-family: 2rem;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+footer>p{
+    color: black
 }

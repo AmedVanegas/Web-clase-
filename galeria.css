@@ -1,0 +1,45 @@
+.container{
+
+ display: flex;
+ flex-direction: row;
+ gap: 20px;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin: 30px 10px;
+    
+   
+}
+
+.img{
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 8px white;
+    filter: blur(3px) opacity(30%) grayscale(100%);
+    transition: 0.3s;
+    
+    
+    
+
+}
+
+img{
+    width: 280px;
+    height: 280px;
+    object-fit:cover;
+
+    
+    
+
+}
+
+.img:hover{
+    transform: scale(1.15);
+    filter: blur(0) saturate(120%);
+    box-shadow: 0 0 20px  rgb(18, 21, 61);
+    
+    
+
+}
