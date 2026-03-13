@@ -1,0 +1,85 @@
+.white,
+form,
+input,
+label,
+fieldset {
+    background-color: rgb(226, 226, 226);
+}
+
+h1{
+    color: rgb(18, 21, 61);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+}
+
+
+
+form {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 20px;
+    width: 60%;
+    margin: 5rem auto;
+    box-shadow: 0 0 10px rgb(14, 14, 14);
+}
+
+fieldset {
+    margin: 4rem 0;
+    border: rgb(18, 21, 61);
+
+}
+
+legend {
+    margin: 3rem 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: rgb(18, 21, 61);
+    color: rgb(226, 226, 226);
+    padding: 0.7rem;
+    border-radius: 4px;
+}
+
+input,
+label,
+select,
+option {
+    display: block;
+
+}
+
+
+
+input {
+    margin: 1rem 0px;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid rgb(18, 21, 61);
+    border-radius: 5px;
+
+}
+
+input::placeholder {
+    font-size: 2rem;
+    
+
+}
+
+select{
+    margin: 1rem 0px;
+}
+
+option,select{
+    padding: 0.7rem;
+    color: rgb(18, 21, 61);
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+
+}
+
+label{
+    font-size: 2rem;
+}
