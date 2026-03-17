@@ -34,6 +34,9 @@ header {
     border-radius: 0 0 5px 5px;
     position: fixed;
     width: 100%;
+    z-index: 1000;
+    top: 0;
+
 }
 
 
@@ -59,12 +62,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: rgb(18, 21, 61);
+    
 
 
 }
 
 main {
-    margin: 4rem 2rem;
+    margin:  4rem 4rem  0  4rem;
 }
 
 
@@ -81,15 +85,20 @@ h2 {
 
 }
 
-h1{
+h1 {
     font-size: 4rem;
     margin: 2rem 0;
 }
 
 a {
     text-decoration: none;
-    transition: 0.2;
+    transition: color 0.2s;
 
+}
+
+a:hover{
+
+    color: grey;
 }
 
 
@@ -106,13 +115,6 @@ footer>p {
     color: black
 }
 
-a:hover {
-    text-transform: scale(1.2);
-}
-
-
-
-
 .menu_icon {
 
     display: none;
@@ -123,9 +125,10 @@ a:hover {
 
 
 
-.menu_icon{
+.menu_icon {
     display: none;
 }
+
 
 @media (max-width: 600px) {
 
@@ -148,7 +151,7 @@ a:hover {
         display: none;
 
     }
-    
+
 
     .menu_icon {
 
@@ -156,10 +159,15 @@ a:hover {
 
     }
 
-    header{
+    header {
         flex-direction: row-reverse;
-    }
+        
+    }   
 
+    main{
+
+        margin: 8rem 4rem 0 4rem;
+    }
 
 
 

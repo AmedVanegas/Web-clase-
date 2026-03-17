@@ -18,14 +18,14 @@
     border-radius: 15px;
     box-shadow: 0 0 8px white;
     filter: blur(3px) opacity(30%) grayscale(100%);
-    transition: 0.3s;
+    transition: all 0.2s ease-in;
     
     
     
 
 }
 
-img{
+.img>img{
     width: 280px;
     height: 280px;
     object-fit:cover;
@@ -37,11 +37,9 @@ img{
 
 .img:hover{
     transform: scale(1.15);
-    filter: blur(0) saturate(120%);
+    filter: blur(0)  opacity(100%) grayscale(0) saturate(120%);
     box-shadow: 0 0 20px  rgb(18, 21, 61);
     
-    
-
 }
 
 h1{
