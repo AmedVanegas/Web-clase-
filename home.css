@@ -5,15 +5,14 @@ div>p{
     line-height: 3rem;
 }
 
-.pt, .ptder{
+.pt{
     display: flex;
     justify-content: space-between;
     gap: 3rem;
     
 }
-.ptder{
-    flex-direction: row-reverse;
-}
+
+
 
 .text_half{
     width: 50%;
@@ -25,19 +24,16 @@ div>p{
     justify-content: center;
     flex-wrap: wrap;
     gap: 6rem;
-    
-}
-
-
-
-.graph,.graphic{
     background-color: rgb(226, 226, 266);
     width: 50%;
     border-radius: 5px;
     border: 2px solid black;
     margin: 5rem 0 1.5rem 0;
-
+    
 }
+
+
+
 
 
 
@@ -83,10 +79,13 @@ div>p{
 span{
     font-weight: bold;
 }
-.der{
-    text-align: end;
-}
+
+
 
 h1{
     text-align: center;
+}
+
+img{
+    width: 100%;
 }

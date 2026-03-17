@@ -11,27 +11,29 @@ html {
 
 .logo {
     padding: 0;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     display: inline-block;
 
 
 }
 
-.logo > img{
+.logo>img {
 
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
-header>nav {
+header {
     display: flex;
-    padding: 20px 40px;
+    padding: 8px 40px;
     background-color: burlywood;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(226, 226, 266);
     border-radius: 0 0 5px 5px;
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -46,7 +48,7 @@ header>nav {
 .menu_item {
     color: black;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -57,22 +59,31 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: rgb(18, 21, 61);
-    
+
 
 }
-main{
+
+main {
     margin: 4rem 2rem;
 }
 
 
-p, h1, h2{
+p,
+h1,
+h2 {
     color: rgb(226, 226, 266);
 }
 
-h1,h2{
+h2 {
     font-size: 3rem;
-    
+    text-align: center;
 
+
+}
+
+h1{
+    font-size: 4rem;
+    margin: 2rem 0;
 }
 
 a {
@@ -82,20 +93,74 @@ a {
 }
 
 
-footer{
+footer {
     padding: 20px;
     background-color: rgb(226, 226, 266);
     text-align: center;
     margin-top: auto;
     border-radius: 5px 5px 0 0;
-    
+
 }
 
-footer>p{
+footer>p {
     color: black
 }
 
-a:hover{
-    text-transform: scale(1.2) ;
+a:hover {
+    text-transform: scale(1.2);
 }
 
+
+
+
+.menu_icon {
+
+    display: none;
+    width: 50px;
+
+
+}
+
+
+
+.menu_icon{
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        padding: 0;
+        height: 50px;
+        width: 50px;
+
+
+    }
+
+    .logo>img {
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu_item {
+
+        display: none;
+
+    }
+    
+
+    .menu_icon {
+
+        display: block;
+
+    }
+
+    header{
+        flex-direction: row-reverse;
+    }
+
+
+
+
+}
