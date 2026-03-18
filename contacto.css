@@ -1,15 +1,25 @@
+:root{
+    
+    --main-color:rgb(226, 226, 266)
+}
+
+
+
 .white,
 form,
 input,
 label,
 fieldset {
-    background-color: rgb(226, 226, 226);
+    background-color: var(--main-color);
 }
 
 h1{
     color: rgb(18, 21, 61);
 }
 
+header>input>label{
+    background-color: var(--main-color);
+}
 
 
 
@@ -33,7 +43,7 @@ legend {
     font-weight: bold;
     font-size: 1.3rem;
     background-color: rgb(18, 21, 61);
-    color: rgb(226, 226, 226);
+    color: var(--main-color);
     padding: 0.7rem;
     border-radius: 4px;
 }
