@@ -5,7 +5,7 @@ div>p{
     line-height: 3rem;
 }
 
-.pt{
+.paragraph{
     display: flex;
     justify-content: space-between;
     gap: 3rem;
@@ -88,4 +88,52 @@ h1{
 
 img{
     width: 100%;
+
+}
+
+
+.banner{
+    padding: 5rem;
+    margin-top: 4rem;
+    background-color: rgb(226, 226, 266);
+    position: relative;
+    
+   
+    
+    
+}
+
+.banner>h1{
+    color: rgb(226, 226, 266);
+    position: absolute;
+    z-index: 500;
+     top: 40%;
+    left: 20%;
+    font-size: 5vw;
+
+}
+.banner>img{
+    border-radius: 1rem;
+    object-fit: fill;
+    
+    
+}
+
+@media (max-width: 800px ){
+
+    .paragraph{
+        flex-direction: column;
+    }
+    .text_half{
+        width: 100%;
+    }
+
+    .graph{
+    width: 100%;
+    padding: 2rem 2rem;
+    margin: 2rem 0;
+}
+
+
+
 }
