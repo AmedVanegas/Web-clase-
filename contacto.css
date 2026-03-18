@@ -9,12 +9,7 @@ fieldset {
 h1{
     color: rgb(18, 21, 61);
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(226, 226, 226);
-}
+
 
 
 

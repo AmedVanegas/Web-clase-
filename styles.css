@@ -13,9 +13,7 @@ html {
     padding: 0;
     height: 30px;
     width: 30px;
-    display: inline-block;
-
-
+    display: inline-block
 }
 
 .logo>img {
@@ -26,16 +24,17 @@ html {
 
 header {
     display: flex;
-    padding: 8px 40px;
-    
+    padding: 0.8rem 4rem;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(226, 226, 266);
     border-radius: 0 0 5px 5px;
-    position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
+    height: 4.6rem;
+    position: fixed;
+
 
 }
 
@@ -45,14 +44,15 @@ header {
     display: flex;
     list-style: none;
     gap: 20px;
-    justify-content: space-around;
+
 }
 
 .menu_item {
     color: black;
     font-weight: bold;
     font-size: 1.5rem;
-
+    text-decoration: none;
+    transition: color 0.2s
 }
 
 
@@ -62,13 +62,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: rgb(18, 21, 61);
-    
+
 
 
 }
 
 main {
-    margin:  4rem 4rem  0  4rem;
+    margin: 4rem 4rem 0 4rem;
 }
 
 
@@ -90,13 +90,8 @@ h1 {
     margin: 2rem 0;
 }
 
-a {
-    text-decoration: none;
-    transition: color 0.2s;
 
-}
-
-a:hover{
+.menu_item:hover {
 
     color: grey;
 }
@@ -115,19 +110,18 @@ footer>p {
     color: black
 }
 
+#toggle__menu,
 .menu_icon {
 
     display: none;
     width: 50px;
+    height: 100%;
 
 
 }
 
 
 
-.menu_icon {
-    display: none;
-}
 
 
 @media (max-width: 600px) {
@@ -146,28 +140,81 @@ footer>p {
         height: 50px;
     }
 
-    .menu_item {
-
-        display: none;
+    .menu {
+        position: absolute;
+        top: 6.6em;
+        left: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        border-radius: 0px 0px 5rem 0px;
+        transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease, border-radius 0.3s ease;
 
     }
 
+
+
+    .menu_list {
+        background-color: rgb(226, 226, 266);
+        width: 100%;
+        height: 20rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-bottom: 1px solid rgb(18, 21, 61);
+        
+
+    }
+
+    .menu_list li {
+        width: 100%; 
+        text-align: center;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid rgb(18, 21, 61);
+
+    
+    }
+
+     .menu_list li:last-child {
+        border-bottom: none;
+    }
 
     .menu_icon {
 
         display: block;
+        cursor: pointer;
 
     }
+
+    #toggle__menu:checked ~ .menu{
+        height: 20rem;
+        width: 100%;
+        opacity: 1;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+   
 
     header {
         flex-direction: row-reverse;
-        
-    }   
+        height: 6.6rem;
+        transition: border-radius 0.3s ease;
 
-    main{
+    }
+
+   header:has(#toggle__menu:checked) {
+        border-radius: 0 0 0 0;
+    }
+
+    main {
 
         margin: 8rem 4rem 0 4rem;
     }
+
 
 
 
